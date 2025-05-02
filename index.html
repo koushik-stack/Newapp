@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title> KU – Personal ePortfolio </title>
+    <meta
+      name="description"
+      content="My name is Koushik, I’m  an A level  graduate student  /  full stack software and cloud dev. I have a passion for all things technology and design, from software engineering to machine learning & generative AI & quantumology."
+    />
+
+    <link rel="icon" type="image/png" href="/icon/32x32.png" />
+
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/180x180.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-title"
+      content="KU – Personal ePortfolio"
+    />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="theme-color" content="#f6d4b1" />
+
+    <meta property="og:title" content="KU – Personal ePortfolio " />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta
+      name="og:description"
+      content="My name is Koushik, I’m  an A level  graduate student  /  full stack software and cloud dev. I have a passion for all things technology and design, from software engineering to machine learning & generative AI & quantumology."
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+
+  <body>
+    <div id="home"></div>
+
+    <canvas class="webgl"></canvas>
+
+    <div id="hero-backup">
+      <h3>Hi there, I’m</h3>
+      <h1>Koushik</h1>
+      <ul>
+        <li>A level graduate</li>
+        <li>Jr full stack dev</li>
+      </ul>
+    </div>
+
+    <nav>
+      <div class="menu-btn">
+        <button class="btn" onclick="toggleMenu()">
+          <svg width="16" height="16">
+            <rect class="st0" width="16" height="3.2" />
+            <rect y="6.4" class="st0" width="16" height="3.2" />
+            <rect y="12.8" class="st0" width="16" height="3.2" />
+          </svg>
+        </button>
+        <div style="display: flex">
+          <a
+            class="btn"
+            href="https://discordapp.com/users/457081376873644034"
+            target="_blank"
+          >
+            <svg width="16px" height="16px">
+              <path
+                d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"
+              />
+              
+            </svg>
+          </a>
+          <a
+            class="btn"
+            href="https://bsky.app/profile/kukdev.bsky.social"
+            target="_blank"
+          >
+            <svg viewBox="0 0 64 57" width="16" height="14.25">
+              <path
+                d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            class="btn"
+            href="https://www.facebook.com/abukoushik32"
+            target="_blank"
+          >
+            <svg width="16" height="16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="menu-body" onclick="closeMenu()">
+        <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#aboutMe" onclick="closeMenu()">About</a>
+        <a href="#projects" onclick="closeMenu()">Projects</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+      </div>
+
+      <div id="tip-scroll">Scroll &#8595;</div>
+    </nav>
+
+    <main>
+      <section>
+        <h1 id="aboutMe">Hi there</h1>
+        <p>
+        My name is Koushik, I’m an A level graduate.
+        Full stack Jr Dev. I have a passion for all
+        things technology,  cloud computing , Gaming , software engineering ,machine
+        learning to Generative AI and quantumology.
+         
+        </p>
+        <p>
+          In addition to my love of technology and AI, I also have interest 
+          in geography, history,  economics and politics.
+        </p>
+
+        <p>
+          Below are details of some of the projects I have developed over my
+          seven years of coding experience.
+        </p>
+      </section>
+
+      <section>
+        <h1 id="projects">Projects</h1>
+        <hr />
+        <h2>PLAY</h2>
+        <h3>2019</h3>
+        <ul class="skills">
+          <li>React</li>
+          <li>JavaScript</li>
+          <li>Sql</li>
+          <li>Software</li>
+        </ul>
+        <p>
+        Originally built as a Bootstrap-based software prototype, Play was an early experiment combining neural networks with developer tooling. Its primary goal was to help developers integrate our API directly into any code editor, enabling seamless interaction and enhanced automation. This project laid the foundation for smart editor extensions and focused on making AI-assisted development both accessible and plug-and-play across tech stacks.
+        </p>
+        <p>
+        Play was officaly retired on 2020 because it was too hard to maintain the backend cost after the covid hit.
+        </p>
+        <br />
+        <div class="image">
+          <img
+            src="/src/img/Capture.JPG"
+            width="64%"
+            alt="Page Buddy screenshot"
+            loading="lazy"
+            style="aspect-ratio: 1563 / 635"
+          />
+        </div>
+        <hr />
+        <h2>Bank management system</h2>
+        <h3>2021</h3>
+        <ul class="skills">
+          <li>C++</li>
+          <li>C</li>
+          <li>Java</li>
+          <li>Sql</li>
+          <li>Redis server</li>
+        </ul>
+        <p>
+        I began developing this banking application in 2021 with a clear mission: to enhance banking security and streamline financial automation. Combining my knowledge in C++, C, Java, SQL, and Redis server, I set out to build a system that not only performs with speed and precision but also prioritizes safety at every layer. My goal is to empower banks and users alike with tools that reduce manual effort, detect suspicious activity, and provide seamless, secure access to financial services across platforms.
+        </p>
+        <p>
+        There is no frontend. It was completely developed on targeting the backend of the system.
+        </p>
+        <br />
+         <div class="image">
+          <img
+            src="/src/img/bank.png"
+            width="64%"
+            alt=""
+            loading="lazy"
+            style="aspect-ratio: 1563 / 635"
+          />
+         </div>
+        <hr />
+
+        <h2>My Own Programming Language (The Retro-Father) </h2>
+        <h3>2022</h3>
+        <ul class="skills">
+          <li>Lexing & Tokenization</li>
+          <li>Syntactic Analysis</li>
+          <li>Parsing</li>
+          <li>Compiler & Interpreter Design</li>
+        </ul>
+        <p>
+        In 2022, as a personal and academic challenge, I set out to design my own programming language, which I later called Retro-Father. The language is built around two core components: a recursive descent parser, which performs lexical analysis and tokenization to construct an abstract syntax tree (AST); and an interpreter, which traverses the AST to evaluate and execute the intended behavior.
+        </p>
+        <p>
+        Even in its early form, Retro-Father supports some powerful features: lambda expressions, closures, and first-class pure functions, making it a solid base for functional programming. Looking ahead, I’m planning to add multithreading, a stronger type system, and performance features like tail-call optimization. I’ve also started experimenting with a stack-based virtual machine that executes bytecode, aiming to push execution efficiency even further.
+        </p>
+        <br />
+        <hr />
+
+        <h2>Dashboard</h2>
+        <h3>2021</h3>
+        <ul class="skills">
+          <li>Css</li>
+          <li>Bootstrap5</li>
+          <li>TypeScript</li>
+          <li>JavaScript</li>
+          <li>Design</li>
+        </ul>
+        <p>
+          I designed and developed a dynamic sales dashboard using CSS, Bootstrap 5, TypeScript, and JavaScript. The goal was to create a responsive and visually engaging platform to track sales performance, monitor targets, and analyze trends in real time. By combining clean UI design with powerful interactive features, the dashboard provided clear insights into key metrics like revenue growth, customer acquisition, and conversion rates. Every element was crafted to deliver a seamless experience, making complex data easy to understand and actionable. This project was a major step forward in blending my skills in front-end development and data visualization to solve real business challenges.
+        </p>
+        <br />
+        <div class="image">
+          <img
+            src="/src/img/dash.JPG"
+            width="64%"
+            alt=""
+            loading="lazy"
+            style="aspect-ratio: 1800 / 1000"
+          />
+        </div>
+     
+        <hr />
+
+        <h2>Verdant Edge</h2>
+        <h3>2023</h3>
+        <ul class="skills">
+          <li>3D Printing</li>
+          <li>Industrial web</li>
+          <li>Adobe Design</li>
+          <li>Branding</li>
+        </ul>
+        <p>
+          A project made for client. Verdant Edge, a precision-engineered tool designed for large-scale gardeners to effortlessly manage excessive plant growth. Crafted through cutting-edge 3D printing and refined with expert industrial design techniques.
+        </p>
+        <div class="image">
+          <img
+            src="/src/img/ind.JPG"
+            width="100%"
+            alt="Gym poster"
+            loading="lazy"
+            style="aspect-ratio: 1920 / 1075"
+          />
+        </div>
+        <hr />
+
+       
+        <h2>Sparks of Genius</h2>
+        <h3>2023</h3>
+        <ul class="skills">
+          <li>Unrealengine</li>
+          <li>Design</li>
+          <li>C#</li>
+          <li>Java</li>
+          <li>Game dev</li>
+        </ul>
+        <p>
+          Sparks of Genius" is crafted as a vibrant and immersive game experience using the power of Unreal Engine, blending cutting-edge design with strong programming foundations. The core game world and mechanics are built with Unreal Engine's visual tools, enabling stunning environments, fluid animations, and highly responsive interactions. C# is used to architect backend systems like player management, data persistence, and AI behaviors, ensuring the gameplay feels smart and dynamic. Meanwhile, Java supports critical server-side operations, multiplayer networking, and cloud integration, keeping players connected and the game world alive. Every element of 'Sparks of Genius' — from its stunning landscapes to its seamless user experience — is the result of a perfect harmony between creative design and sharp programming craftsmanship.
+        </p>
+        
+        <hr />
+        
+
+        
+      </section>
+
+      <section>
+        <h1 id="contact">Contact</h1>
+        <p style="text-align: center">
+          Reach out on
+          <a href="https://discordapp.com/users/457081376873644034"
+            ><u><b>Discord</b></u></a
+          >
+        </p>
+      </section>
+    </main>
+
+    <input type="text" id="textarea" readonly />
+    <div id="loading">
+      <h2>Booting...</h2>
+      <div id="loading-bar">
+        <div id="loading-bar-progress"></div>
+      </div>
+      <div id="loading-items">Starting...</div>
+    </div>
+    <footer>
+      <div>This is just a sample of projects I have Shared of what I have done in my Journey,</div>
+      <div>Developed By Ku.</div>
+      <div>Computer design based on the Commodore PET 8296.</div>
+     
+ 
+      <div>COPYRIGHT © 2025-2026.</div>
+    </footer>
+    <script>
+      function closeMenu() {
+        document.getElementsByTagName("nav")[0].classList.remove(["active"]);
+      }
+
+      function toggleMenu() {
+        const nav = document.getElementsByTagName("nav")[0];
+        if (nav.classList.contains("active")) {
+          nav.classList.remove(["active"]);
+        } else {
+          nav.classList.add("active");
+        }
+      }
+    </script>
+    <script
+      fetchpriority="high"
+      src="https://cdn-ts.netlify.app/webgl-helper@3.0.11/webgl-helper.min.js"
+    ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EDNKHGV4HB"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-EDNKHGV4HB");
+      gtag("event", "origin", { name: window.origin });
+    </script>
+  </body>
+</html>
