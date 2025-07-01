@@ -3,7 +3,7 @@
 
 
 # Help
-### KU SSH is just like BASH except much more limited.
+### KU SSH is just like BASH with limited features.
 
 ## • Type*ls* to list directory contents
 

@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
 import checker from "vite-plugin-checker";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [checker({ typescript: true })],
   worker: {},
@@ -11,6 +10,6 @@ export default defineConfig({
   server: {
     open: true,
     port: 1234,
-    host: "localhost",
+    host: true, // ✅ Allows access via your local network IP
   },
 });
