@@ -7,6 +7,7 @@
 
 ##   • A level 
 ##   • Jr full stack dev
+##   • Cloud Eng/Arch
 
 
 
