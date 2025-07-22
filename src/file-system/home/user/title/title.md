@@ -5,7 +5,7 @@
 
 #  *I'm Koushik*
 
-##   • A level 
+##   • Incoming Freshman 
 ##   • Jr full stack dev
 ##   • Cloud Eng/Arch
 
