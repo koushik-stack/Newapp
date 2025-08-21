@@ -12,12 +12,14 @@ export default function hello(
   };
 
   const app = (args: string[], options: string[]) => {
-    if (options.find((o) => o === "-h" || o === '-help')) {
+    if (options.find((o) => o === "-h" || o === "-help")) {
       print(`\n${docs.name} – ${docs.short}`);
       return;
     }
 
-    print("\nHello, Dreamer!, Adventure awaits — and we were born to meet it head-on!");
+    print(
+      "\nHello, Dreamer!, Adventure awaits — and we were born to meet it head-on!"
+    );
   };
   return { docs, app };
 }
