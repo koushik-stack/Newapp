@@ -8,7 +8,7 @@
 
 #  Hi there,
 #  *I'm Koushik
-#  -Jr full stack dev
-##     — A' Level
+#  -Software Engineer
+##     
 ##
 ###   *Scroll* or type "help" to get started
