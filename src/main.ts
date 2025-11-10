@@ -1,5 +1,6 @@
 import "./main.css";
 import WebGL from "./webgl";
+import { initializeBlog } from "./blog";
 
 WebGL();
 
@@ -11,3 +12,9 @@ function onScroll() {
 }
 onScroll();
 window.addEventListener("scroll", onScroll, { passive: true });
+
+// Initialize blog system when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  const blogManager = initializeBlog();
+  blogManager.init();
+});
