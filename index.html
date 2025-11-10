@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title> KU – Personal ePortfolio </title>
+    <title>KU – Personal ePortfolio</title>
     <meta
       name="description"
       content="My name is Koushik, I’m  a senior Software Engineer  /  Working At Anthropic ML fields. I have a passion for all things technology and design, from software engineering to machine learning & generative AI & quantumology."
@@ -36,6 +36,7 @@
     />
     <link rel="manifest" href="/manifest.json" />
     <script type="module" src="/src/main.ts"></script>
+    <script src="/src/blog.js"></script>
   </head>
 
   <body>
@@ -71,7 +72,6 @@
               <path
                 d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"
               />
-              
             </svg>
           </a>
           <a
@@ -90,12 +90,10 @@
             href="https://github.com/Koushikdev025"
             target="_blank"
           >
-           
             <svg width="16px" height="16px">
               <path
                 d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
               />
-              
             </svg>
           </a>
         </div>
@@ -105,6 +103,7 @@
         <a href="#home" onclick="closeMenu()">Home</a>
         <a href="#aboutMe" onclick="closeMenu()">About</a>
         <a href="#projects" onclick="closeMenu()">Projects</a>
+        <a href="#posts" onclick="closeMenu()">Posts</a>
         <a href="#contact" onclick="closeMenu()">Contact</a>
       </div>
 
@@ -115,14 +114,14 @@
       <section>
         <h1 id="aboutMe">Hi there</h1>
         <p>
-        My name is Koushik, Senior Software Engineer currently working at Anthropic in the ML for systems , tokenization, and encoding. I have a passion for all
-        fields  technology,  cloud computing , Gaming , software engineering ,machine
-        learning to Generative AI and quantumology.
-         
+          My name is Koushik, Senior Software Engineer currently working at
+          Anthropic in the ML for systems , tokenization, and encoding. I have a
+          passion for all fields technology, cloud computing , Gaming , software
+          engineering ,machine learning to Generative AI and quantumology.
         </p>
         <p>
-          In addition to my love of technology and AI, I also have interest 
-          in geography, history,  economics and politics.
+          In addition to my love of technology and AI, I also have interest in
+          geography, history, economics and politics.
         </p>
 
         <p>
@@ -143,12 +142,19 @@
           <li>Software</li>
         </ul>
         <p>
-        Originally developed as a Bootstrap-based software prototype, Play was an early initiative exploring how neural networks could augment developer tooling. Its core objective was to enable seamless integration of our API into popular code editors, providing real-time interaction and automation for developers. This project laid the groundwork for smart editor extensions and advanced the vision of making AI-assisted development accessible and plug-and-play across diverse tech stacks.
-
-Play was officially retired in 2020 due to the high cost of maintaining its backend infrastructure during the COVID-19 period.
-        <p>
-        
+          Originally developed as a Bootstrap-based software prototype, Play was
+          an early initiative exploring how neural networks could augment
+          developer tooling. Its core objective was to enable seamless
+          integration of our API into popular code editors, providing real-time
+          interaction and automation for developers. This project laid the
+          groundwork for smart editor extensions and advanced the vision of
+          making AI-assisted development accessible and plug-and-play across
+          diverse tech stacks. Play was officially retired in 2020 due to the
+          high cost of maintaining its backend infrastructure during the
+          COVID-19 period.
         </p>
+
+        <p></p>
         <br />
         <div class="image">
           <img
@@ -170,16 +176,21 @@ Play was officially retired in 2020 due to the high cost of maintaining its back
           <li>Redis server</li>
         </ul>
         <p>
-        I initiated the development of this banking application in 2021 with the mission of enhancing security and streamlining financial automation. Leveraging my expertise in C++, C, Java, SQL, and Redis, I designed a system focused on high performance, precision, and security at every layer. The platform is intended to empower both banks and end users by reducing manual processes, proactively detecting suspicious activity, and delivering seamless, secure access to financial services across multiple platforms.
+          I initiated the development of this banking application in 2021 with
+          the mission of enhancing security and streamlining financial
+          automation. Leveraging my expertise in C++, C, Java, SQL, and Redis, I
+          designed a system focused on high performance, precision, and security
+          at every layer. The platform is intended to empower both banks and end
+          users by reducing manual processes, proactively detecting suspicious
+          activity, and delivering seamless, secure access to financial services
+          across multiple platforms.
         </p>
-        <p>
-        
-        </p>
+        <p></p>
         <br />
 
         <hr />
 
-        <h2>My Own Programming Language (The Retro-Father) </h2>
+        <h2>My Own Programming Language (The Retro-Father)</h2>
         <h3>2022</h3>
         <ul class="skills">
           <li>Lexing & Tokenization</li>
@@ -188,13 +199,18 @@ Play was officially retired in 2020 due to the high cost of maintaining its back
           <li>Compiler & Interpreter Design</li>
         </ul>
         <p>
-        As a personal and academic challenge, I designed and implemented Retro-Father, my own programming language. It consists of a recursive descent parser that performs lexical analysis and builds an abstract syntax tree (AST), and an interpreter that traverses the AST to execute programs.
-
-Even in its early form Retro-Father supports lambda expressions, closures, and first-class pure functions, providing a strong foundation for functional programming. Planned enhancements include multithreading, a stronger type system, tail-call optimization, and a stack-based virtual machine for executing bytecode with greater efficiency.
+          As a personal and academic challenge, I designed and implemented
+          Retro-Father, my own programming language. It consists of a recursive
+          descent parser that performs lexical analysis and builds an abstract
+          syntax tree (AST), and an interpreter that traverses the AST to
+          execute programs. Even in its early form Retro-Father supports lambda
+          expressions, closures, and first-class pure functions, providing a
+          strong foundation for functional programming. Planned enhancements
+          include multithreading, a stronger type system, tail-call
+          optimization, and a stack-based virtual machine for executing bytecode
+          with greater efficiency.
         </p>
-        <p>
-        
-        </p>
+        <p></p>
         <br />
         <hr />
 
@@ -208,7 +224,14 @@ Even in its early form Retro-Father supports lambda expressions, closures, and f
           <li>Design</li>
         </ul>
         <p>
-          I designed and developed a dynamic, responsive sales dashboard using CSS, Bootstrap 5, TypeScript, and JavaScript. The platform tracks sales performance, monitors targets, and analyzes trends in real time. By blending clean UI design with interactive visualizations, it delivers clear insights into key metrics such as revenue growth, customer acquisition, and conversion rates. This project strengthened my front-end development and data-visualization skills while solving real business challenges.
+          I designed and developed a dynamic, responsive sales dashboard using
+          CSS, Bootstrap 5, TypeScript, and JavaScript. The platform tracks
+          sales performance, monitors targets, and analyzes trends in real time.
+          By blending clean UI design with interactive visualizations, it
+          delivers clear insights into key metrics such as revenue growth,
+          customer acquisition, and conversion rates. This project strengthened
+          my front-end development and data-visualization skills while solving
+          real business challenges.
         </p>
         <br />
         <div class="image">
@@ -220,7 +243,7 @@ Even in its early form Retro-Father supports lambda expressions, closures, and f
             style="aspect-ratio: 1800 / 1000"
           />
         </div>
-     
+
         <hr />
 
         <h2>Verdant Edge</h2>
@@ -232,7 +255,11 @@ Even in its early form Retro-Father supports lambda expressions, closures, and f
           <li>Branding</li>
         </ul>
         <p>
-          Developed for a client, Verdant Edge is a precision-engineered tool designed to help large-scale gardeners efficiently manage excessive plant growth. It was created using cutting-edge 3D printing and refined with expert industrial design techniques to deliver durability, ergonomic performance, and ease of use.
+          Developed for a client, Verdant Edge is a precision-engineered tool
+          designed to help large-scale gardeners efficiently manage excessive
+          plant growth. It was created using cutting-edge 3D printing and
+          refined with expert industrial design techniques to deliver
+          durability, ergonomic performance, and ease of use.
         </p>
         <div class="image">
           <img
@@ -245,7 +272,6 @@ Even in its early form Retro-Father supports lambda expressions, closures, and f
         </div>
         <hr />
 
-       
         <h2>Sparks of Genius</h2>
         <h3>2023</h3>
         <ul class="skills">
@@ -256,11 +282,20 @@ Even in its early form Retro-Father supports lambda expressions, closures, and f
           <li>Game dev</li>
         </ul>
         <p>
-          Sparks of Genius is a vibrant, immersive game experience built with Unreal Engine, combining cutting-edge design with solid programming foundations. The game world and core mechanics leverage Unreal Engine’s visual tools to deliver stunning environments, fluid animations, and highly responsive interactions. C# powers backend systems such as player management, data persistence, and AI behaviors, while Java supports server-side operations, multiplayer networking, and cloud integration. Every element — from the landscapes to the user experience — reflects a balance between creative design and technical craftsmanship.
+          Sparks of Genius is a vibrant, immersive game experience built with
+          Unreal Engine, combining cutting-edge design with solid programming
+          foundations. The game world and core mechanics leverage Unreal
+          Engine’s visual tools to deliver stunning environments, fluid
+          animations, and highly responsive interactions. C# powers backend
+          systems such as player management, data persistence, and AI behaviors,
+          while Java supports server-side operations, multiplayer networking,
+          and cloud integration. Every element — from the landscapes to the user
+          experience — reflects a balance between creative design and technical
+          craftsmanship.
         </p>
-        
+
         <hr />
-         <h2>Traffic management solution (for wordpress only)</h2>
+        <h2>Traffic management solution (for wordpress only)</h2>
         <h3>2021</h3>
         <ul class="skills">
           <li>AWS</li>
@@ -268,12 +303,21 @@ Even in its early form Retro-Father supports lambda expressions, closures, and f
           <li>C#</li>
           <li>GO</li>
           <li>Python</li>
-          
         </ul>
         <p>
-          Traffic Management Solution utilized AWS cloud infrastructure to deliver a scalable and reliable system for real-time traffic monitoring and control. Built using a microservices architecture, the solution integrated services written in C#, Go, and Python, each optimized for specific tasks such as data ingestion, analytics, and API management. AWS services like Amazon EC2, Lambda, S3, and DynamoDB were used for compute, storage, and database functionality, enabling high availability and rapid scaling. The multi-language approach ensured performance efficiency and flexibility, allowing seamless integration with traffic sensors, user dashboards, and third-party systems for wordpress systems.
+          Traffic Management Solution utilized AWS cloud infrastructure to
+          deliver a scalable and reliable system for real-time traffic
+          monitoring and control. Built using a microservices architecture, the
+          solution integrated services written in C#, Go, and Python, each
+          optimized for specific tasks such as data ingestion, analytics, and
+          API management. AWS services like Amazon EC2, Lambda, S3, and DynamoDB
+          were used for compute, storage, and database functionality, enabling
+          high availability and rapid scaling. The multi-language approach
+          ensured performance efficiency and flexibility, allowing seamless
+          integration with traffic sensors, user dashboards, and third-party
+          systems for wordpress systems.
         </p>
-         <div class="image">
+        <div class="image">
           <img
             src="/src/img/download.png"
             width="200%"
@@ -283,18 +327,18 @@ Even in its early form Retro-Father supports lambda expressions, closures, and f
           />
         </div>
 
-        
-          
-        <hr/>
+        <hr />
 
-
-        <h2>Simple Neural Network from Scratch </h2>
+        <h2>Simple Neural Network from Scratch</h2>
         <h3>2021</h3>
         <ul class="skills">
           <li>Python</li>
         </ul>
         <p>
-          I built an image recognition neural network that can identify and classify objects within images. The network processes input images through multiple layers, including convolutional layers that extract important features such as edges, textures, and shapes.
+          I built an image recognition neural network that can identify and
+          classify objects within images. The network processes input images
+          through multiple layers, including convolutional layers that extract
+          important features such as edges, textures, and shapes.
         </p>
         <div class="image">
           <img
@@ -306,10 +350,9 @@ Even in its early form Retro-Father supports lambda expressions, closures, and f
           />
         </div>
 
+        <hr />
 
-        <hr/>
-
-        <h2>NeuroRiftV3/python-to-triton-llm-trained-model </h2>
+        <h2>NeuroRiftV3/python-to-triton-llm-trained-model</h2>
         <h3>2025</h3>
         <ul class="skills">
           <li>Python</li>
@@ -317,22 +360,27 @@ Even in its early form Retro-Father supports lambda expressions, closures, and f
           <li>C</li>
           <li>C++</li>
         </ul>
-        
+
         <p>
-          NeuroRiftV3 is a specialized code-translation LLM that converts high-level Python code—particularly numerical and array operations—into high-performance Triton GPU kernels. Acting as an automatic compiler, it enables rapid, optimized GPU execution, bridging the gap between Python development and efficient parallel computation.
-    
+          NeuroRiftV3 is a specialized code-translation LLM that converts
+          high-level Python code—particularly numerical and array
+          operations—into high-performance Triton GPU kernels. Acting as an
+          automatic compiler, it enables rapid, optimized GPU execution,
+          bridging the gap between Python development and efficient parallel
+          computation.
         </p>
         <p>
-          
-           I intially developed it when I was given the task of building something some Scratch within my first 90 days of joining Anthropic aka also as Cladue Ai. 
+          I intially developed it when I was given the task of building
+          something some Scratch within my first 90 days of joining Anthropic
+          aka also as Cladue Ai.
         </p>
 
         <a
-            target="_blank"
-            href="https://huggingface.co/NeuroRiftV3/python-to-triton-llm-trained-model"
-            ><u>To access the model click here</u></a
-          >
-          <hr />
+          target="_blank"
+          href="https://huggingface.co/NeuroRiftV3/python-to-triton-llm-trained-model"
+          ><u>To access the model click here</u></a
+        >
+        <hr />
         <div class="image">
           <img
             src="/src/img/hugging face model.JPG"
@@ -343,14 +391,64 @@ Even in its early form Retro-Father supports lambda expressions, closures, and f
           />
         </div>
 
-        <hr/>
+        <hr />
+      </section>
 
+      <section>
+        <h1 id="posts">Posts  (under construction)</h1>
+        <h2>Daily Tech Insights & Development Journey</h2>
+        <p>
+          Welcome to my blog section where I share daily insights about software
+          engineering, machine learning, and emerging technologies. Here you'll
+          find my thoughts on the latest developments in AI, coding tutorials,
+          project breakdowns, and reflections on my journey in the tech
+          industry. Whether it's exploring new frameworks, discussing best
+          practices, or diving deep into complex algorithms, this space is
+          dedicated to sharing knowledge and fostering meaningful conversations
+          about technology and innovation.
+        </p>
+        <p>
+          Stay tuned for regular updates as I document my experiences working
+          with cutting-edge technologies, share lessons learned from real-world
+          projects, and explore the intersection of creativity and code. Each
+          post aims to provide valuable insights that can help fellow developers
+          and tech enthusiasts in their own learning journey.
+        </p>
 
+        <div class="blog-posts">
+          <div class="blog-controls">
+            <h3>Recent Posts</h3>
+            <div class="search-container">
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Search posts..."
+                onkeyup="if(event.key==='Enter') searchPosts()"
+              />
+              <button class="search-btn" onclick="searchPosts()">🔍</button>
+            </div>
+            <div class="post-filters">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="ai">AI/ML</button>
+              <button class="filter-btn" data-filter="dev">Development</button>
+              <button class="filter-btn" data-filter="tech">
+                Tech Insights
+              </button>
+            </div>
+          </div>
 
+          <div class="posts-container" id="postsContainer">
+            <div class="loading-posts">
+              <h4>Loading posts...</h4>
+            </div>
+          </div>
 
-        
-
-        
+          <div class="pagination">
+            <button class="btn" id="loadMoreBtn" onclick="loadMorePosts()">
+              Load More Posts
+            </button>
+          </div>
+        </div>
       </section>
 
       <section>
@@ -373,11 +471,13 @@ Even in its early form Retro-Father supports lambda expressions, closures, and f
       <div id="loading-items">Starting...</div>
     </div>
     <footer>
-      <div>This is just a sample of projects I have Shared of what I have done in my Journey,</div>
+      <div>
+        This is just a sample of projects I have Shared of what I have done in
+        my Journey,
+      </div>
       <div>Developed By Ku.</div>
       <div>Computer design based on the Commodore PET 8296.</div>
-     
- 
+
       <div>COPYRIGHT © 2025-2026.</div>
     </footer>
     <script>
@@ -393,6 +493,11 @@ Even in its early form Retro-Father supports lambda expressions, closures, and f
           nav.classList.add("active");
         }
       }
+
+      // Initialize blog system when page loads
+      document.addEventListener("DOMContentLoaded", function () {
+        blogManager.init();
+      });
     </script>
     <script
       fetchpriority="high"
