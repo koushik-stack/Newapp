@@ -213,7 +213,7 @@ export class BlogManager {
         <div class="post-modal-content">
           <div class="post-modal-header">
             <h2>${post.title}</h2>
-            <button class="close-modal" onclick="this.parentElement.parentElement.parentElement.remove()">&times;</button>
+            <button class="close-modal" onclick="window.blogManager.closeModal(this)">&times;</button>
           </div>
           <div class="post-modal-meta">
             <span class="post-category">${post.category.toUpperCase()}</span>
@@ -227,7 +227,37 @@ export class BlogManager {
           </div>
         </div>
       `;
+      
+      // Add click outside to close
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          this.closeModal(modal.querySelector('.close-modal') as HTMLElement);
+        }
+      });
+      
+      // Prevent body scroll
+      document.body.classList.add('modal-open');
+      
       document.body.appendChild(modal);
+    }
+  }
+
+  closeModal(closeButton: HTMLElement): void {
+    const modal = closeButton.closest('.post-modal') as HTMLElement;
+    if (modal) {
+      const content = modal.querySelector('.post-modal-content') as HTMLElement;
+      if (content) {
+        content.style.animation = 'bookClose 0.4s ease-in forwards';
+        modal.style.animation = 'fadeOut 0.4s ease-in forwards';
+        
+        setTimeout(() => {
+          if (modal.parentNode) {
+            modal.parentNode.removeChild(modal);
+            // Re-enable body scroll
+            document.body.classList.remove('modal-open');
+          }
+        }, 400);
+      }
     }
   }
 

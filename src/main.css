@@ -575,7 +575,7 @@ a:active {
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  animation: fadeIn 0.3s;
+  animation: fadeIn 0.4s ease-out;
 }
 
 .post-modal-content {
@@ -585,7 +585,28 @@ a:active {
   max-height: 80vh;
   overflow-y: auto;
   box-shadow: 6px 6px 0px #e5c3a0, 12px 12px 0px rgba(44, 43, 43, 0.25);
-  animation: slideIn 0.3s;
+  animation: bookOpen 0.6s ease-out;
+  transform-origin: left center;
+  position: relative;
+}
+
+.post-modal-content::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  background: linear-gradient(to right, 
+    rgba(15, 15, 15, 0.3) 0%, 
+    rgba(15, 15, 15, 0.1) 50%, 
+    transparent 100%);
+  border-radius: 2px 0 0 2px;
+}
+
+/* Prevent body scroll when modal is open */
+body.modal-open {
+  overflow: hidden;
 }
 
 .post-modal-header {
@@ -636,17 +657,55 @@ a:active {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes slideIn {
   from { 
-    opacity: 0;
-    transform: translateY(-50px) scale(0.9);
+    opacity: 0; 
   }
   to { 
+    opacity: 1; 
+  }
+}
+
+@keyframes bookOpen {
+  0% {
+    opacity: 0;
+    transform: perspective(1000px) rotateY(-90deg) scale(0.8);
+    box-shadow: 0 0 0 #e5c3a0, 0 0 0 rgba(44, 43, 43, 0.25);
+  }
+  50% {
+    opacity: 0.7;
+    transform: perspective(1000px) rotateY(-45deg) scale(0.9);
+    box-shadow: 3px 3px 0px #e5c3a0, 6px 6px 0px rgba(44, 43, 43, 0.25);
+  }
+  100% {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: perspective(1000px) rotateY(0deg) scale(1);
+    box-shadow: 6px 6px 0px #e5c3a0, 12px 12px 0px rgba(44, 43, 43, 0.25);
+  }
+}
+
+@keyframes bookClose {
+  0% {
+    opacity: 1;
+    transform: perspective(1000px) rotateY(0deg) scale(1);
+    box-shadow: 6px 6px 0px #e5c3a0, 12px 12px 0px rgba(44, 43, 43, 0.25);
+  }
+  50% {
+    opacity: 0.7;
+    transform: perspective(1000px) rotateY(-45deg) scale(0.9);
+    box-shadow: 3px 3px 0px #e5c3a0, 6px 6px 0px rgba(44, 43, 43, 0.25);
+  }
+  100% {
+    opacity: 0;
+    transform: perspective(1000px) rotateY(-90deg) scale(0.8);
+    box-shadow: 0 0 0 #e5c3a0, 0 0 0 rgba(44, 43, 43, 0.25);
+  }
+}
+
+@keyframes fadeOut {
+  from { 
+    opacity: 1; 
+  }
+  to { 
+    opacity: 0; 
   }
 }
