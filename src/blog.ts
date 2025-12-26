@@ -84,8 +84,8 @@ export class BlogManager {
     },
     {
       id: 8,
-      title: "Quantum Computing Meets Classical Algorithms",
-      category: "tech",
+      title: "How to tackle Big Tech Interview ",
+      category: "tech , interview",
       date: "2025-01-03",
       excerpt: "Bridging the gap between quantum and classical computing through hybrid algorithms and practical applications in current technology stacks.",
       content: "Quantum computing isn't just theoretical anymore. This post explores practical applications of quantum algorithms in classical systems and how hybrid approaches are solving real-world problems. We'll cover quantum-inspired optimization and its applications in machine learning.",
