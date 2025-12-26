@@ -457,6 +457,14 @@ a:active {
   line-height: 1.6;
 }
 
+.blog-post .post-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
 .blog-post .read-more {
   color: var(--color);
   text-decoration: underline;
@@ -468,6 +476,48 @@ a:active {
 .blog-post .read-more:hover {
   color: #8b4513;
   transform: scale(1.05);
+}
+
+.share-btn {
+  padding: 6px 12px;
+  border: dashed 2px var(--color);
+  background-color: transparent;
+  color: var(--color);
+  font-family: "public-pixel", monospace;
+  font-size: 0.8em;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 2px 2px 0px #e5c3a0, 4px 4px 0px rgba(44, 43, 43, 0.25);
+  white-space: nowrap;
+}
+
+.share-btn:hover {
+  background-color: var(--color);
+  color: #f6d4b1;
+  transform: scale(1.05);
+  box-shadow: 3px 3px 0px #e5c3a0, 5px 5px 0px rgba(44, 43, 43, 0.25);
+}
+
+.share-btn:active {
+  transform: scale(0.98);
+  box-shadow: 1px 1px 0px #e5c3a0, 2px 2px 0px rgba(44, 43, 43, 0.25);
+}
+
+.share-feedback {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color);
+  color: #f6d4b1;
+  padding: 12px 24px;
+  border: dashed 2px #f6d4b1;
+  font-family: "public-pixel", monospace;
+  font-size: 0.9em;
+  z-index: 2000;
+  box-shadow: 4px 4px 0px rgba(44, 43, 43, 0.3);
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 
 .loading-posts {
@@ -616,6 +666,12 @@ body.modal-open {
   padding: 20px;
   border-bottom: dashed 2px var(--color);
   background-color: var(--color);
+}
+
+.modal-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .post-modal-header h2 {
