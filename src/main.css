@@ -471,6 +471,8 @@ a:active {
   cursor: pointer;
   font-weight: bold;
   transition: all 0.3s;
+  animation: float 3s ease-in-out infinite;
+  display: inline-block;
 }
 
 .blog-post .read-more:hover {
@@ -763,5 +765,14 @@ body.modal-open {
   }
   to { 
     opacity: 0; 
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
   }
 }
