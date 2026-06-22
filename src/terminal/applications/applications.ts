@@ -7,6 +7,7 @@ import mkdir from "./mkdir";
 import pwd from "./pwd";
 import show from "./show";
 import touch from "./touch";
+import numberchess from "./numberchess";
 // @ts-ignore
 import helpMD from "./assets/help.md?raw";
 
@@ -32,6 +33,7 @@ export default function Applications(
     mkdir: mkdir(print, path),
     touch: touch(print, path),
     hello: hello(print, path),
+    numberchess: numberchess(print, path),
   };
   const getApp = (
     appName: string
